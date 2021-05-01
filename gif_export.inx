@@ -4,10 +4,11 @@
   <id>fruchti.inkscape.gif_export</id>
   <dependency type="executable" location="extensions">gif_export.py</dependency>
 
-  <param name="description" type="description" indent="-1">Export all selected objects as frames of a GIF, ordered from bottom to top layer.</param>
-  <param name="reverse" type="boolean" gui-text="Reverse the order of the selected objects">false</param>
-  <param name="options-title" type="description" appearance="header">Export Parameters</param>
-  <param name="folder" type="string" gui-text="Folder name"></param>
+  <label>Export all selected objects as frames of a GIF, ordered from bottom to top layer.</label>
+  <param name="reverse" type="boolean" gui-text="Reverse the order of the selected objects"></param>
+  <param name="temp" type="boolean" gui-text="Save frames as png files"></param>
+  <label appearance="header">Export Parameters </label>
+  <param name="folder" type="path" mode="folder" gui-text="Folder name"></param>
   <param name="name" type="string" gui-text="GIF name"></param>
   <param name="loop" type="int" min="0" max="100" gui-text="Number of loops"></param>
   <param name="duration" type="int" min="0" max="1000" gui-text="Duration in ms"></param>
